@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+  <display-name>Comment</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+	<welcome-file>home.html</welcome-file>
+	<welcome-file>home.htm</welcome-file>
+  </welcome-file-list>
+
+  
+
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>Comments</servlet-name>
+    <servlet-class>com.Comments</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Comments</servlet-name>
+    <url-pattern>/Comments</url-pattern>
+  </servlet-mapping>
+  
+
+</web-app>

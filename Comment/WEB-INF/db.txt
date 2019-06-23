@@ -1,0 +1,20 @@
+1) create folder in c:/data/db
+
+2)to start mongo db server
+
+mongod --storageEngine=mmapv1
+
+3) in second command prompt after setting to bin type 'mongo'
+
+
+use comment;
+
+drop command
+
+db.comment.drop();
+
+view 
+
+db.register.find();
+
+show dbs;

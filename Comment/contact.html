@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+	font-family: Verdana;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+}
+div {
+    width: 1200px;
+    padding: 5px;
+    background-color: white;
+     margin: auto;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 0px;
+}
+a {
+    color: black;
+    margin: 0 auto;
+    padding: 2px;
+    transition: 0.3s;
+}
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 100, 70, 0.5);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	text-align:center;
+}
+li {
+   display:inline;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: navy;
+}
+.active {
+    background-color: navy;
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<a name="top"></a>
+	<center><img src="img/logo.jpg" alt="PowerUp Reviews" style="width:489px;height:159px;"></center>
+
+	<p align="right"><a href="Login.jsp">Sign in</p></a>
+	<form>  <input type="text" name="search" placeholder="Search.."></form>
+<ul>
+ <li><a href="home.html">Home</a></li>
+  <li><a href="reviews.html">Reviews</a></li>
+  <li><a href="forums.html">Forums</a></li>
+  <li><a href="upcoming.html">Upcoming Games</a></li>
+    <li><a class="active" href="contact.html">Contact Us</a></li>
+	<li><a href="index.html">Chat Room</a></li>
+</ul>
+
+<br></br>
+<table border="1" height = "30%" width="100%" cellpadding = "2">
+<tr>
+<td style="height:30%;  width:100%;">
+<img src="img/contact.jpg" alt="Contact Us" style="width:275px;height:230px;">
+
+<p><h2><center>Email Us</center></h2>
+<br>
+<center><img src ="img/email.png"></center>
+<br>
+<center><button type="button"><a href="mailto:vbrahmbhatt1@luc.edu">Compose</a></button></center>
+<br></br>
+</tr></td></table>
+<center><a href="#top"><img src ="img/topanchor.jpg"></a></center>
+</body>
+</html>
+
+
+<!--
+This was a Javascript build for an emailing form, however it gave us issues sending an email.
+<html>
+<head>
+<script>
+function validate(){
+var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+	var add = document.forms["contact"]["email"].value;
+	if(reg.test(add)== false){
+		alert("Email: Invalid email, Please enter a valid email ");
+		document.forms["contact"]["email"].focus();
+		return false;
+	}
+
+}
+</script>
+<style>
+p {
+	font-family: Verdana;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+div {
+    width: 1200px;
+    padding: 5px;
+    background-color: white;
+     margin: auto;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 0px;
+
+}
+a {
+    color: #33ff33;
+    margin: 0 auto;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 100, 70, 0.5);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	text-align:center;
+}
+
+li {
+   display:inline;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: navy;
+}
+
+.active {
+    background-color: navy;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: #00FF00;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 30px 50px 10px 200px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float: center;
+}
+
+input[type=submit]:hover {
+    background-color: #2dcb20;
+}
+label{
+font-size:15px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+h3 { font-size:20px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+color:#cb202d;
+margin-top: -2.5em;
+}
+#Message{
+width: 50%;
+height: 300px;
+}
+
+a.cancel{
+    float:right;
+	margin: -5.5em 10px 0 90%;
+    }
+.container{width: 40%;
+height: 40%
+ padding-top: 75%; /* defines aspect ratio */
+vertical-align: middle;
+border-radius: 15px;
+text-decoration: none;
+max-height:850px;
+max-width:400px
+
+position: absolute;
+background-color:white;
+margin-left:400px;
+margin-right:350px;
+margin-bottom: 100px;
+margin-top: 60px;}
+#abc{
+text-align:left;
+padding: 20px 10px 10px 30px;
+font-size:20px;
+font-weight: 10px;
+font-family:'Open Sans', sans-serif;;
+color:#cb202d;
+background-color: white;
+border-style: solid;
+    border-width: 2px 2px 2px 2px;}
+</style>
+
+</head>
+<body>
+
+<div>
+
+	<center><img src="img/logo.jpg" alt="PowerUp Reviews" style="width:489px;height:159px;"></center>
+
+	<a name="top"></a>
+	<p align="right"><a href="Login.jsp">Sign in</p></a>
+	<form>  <input type="text" name="search" placeholder="Search.."></form>
+
+<ul>
+ <li><a href="home.html">Home</a></li>
+  <li><a href="reviews.html">Reviews</a></li>
+  <li><a href="forums.html">Forums</a></li>
+  <li><a href="upcoming.html">Upcoming Games</a></li>
+    <li><a class="active" href="contact.html">Contact Us</a></li>
+		<li><a href="index.html">Chat Room</a></li>
+</ul>
+
+<div class="container">
+<table>
+<tr>
+<td>
+<img src="img/contact.jpg" alt="Contact Us" style="display:inline;width:250px;margin-left:-300px">
+</td>
+
+<td>
+<form  name="contact"  method="post" onsubmit="javascript: return validate();">
+ <label for="name" style="margin-left:20px;">Name</label>
+ <input style="margin-left:20px;" type="text" id="Name" required><br/>
+ <label style="margin-left:20px;" for="Email">Email</label>
+ <input  style="margin-left:20px;" type="text" id="email" name="email" placeholder="abc@gmail.com" required><br/>
+ <label style="margin-left:20px;" for="msg">Message</label>
+
+ <textarea name="message" rows="15" cols="60" style="margin-left:80px;"></textarea>
+ <input type="submit" style="margin-left:80px" value="Submit">
+</form>
+</td>
+</tr>
+</table>
+
+
+</div>
+</pre>
+</div>
+<center><a href="#top"><img src ="img/topanchor.jpg"></a></center>
+</body>
+</html>-->
